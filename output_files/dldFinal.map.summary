@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Nov 14 18:51:52 2022
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Revision Name : dldFinal
+Top-level Entity Name : oneDisplay
+Family : Cyclone IV E
+Total logic elements : 41
+    Total combinational functions : 41
+    Dedicated logic registers : 30
+Total registers : 30
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
