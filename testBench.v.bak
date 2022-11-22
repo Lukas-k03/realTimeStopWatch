@@ -1,0 +1,58 @@
+module testBench;
+
+	reg reset; 
+	
+	reg clk;
+	
+	
+	reg Start_Stop;
+	
+	wire A[6:0];
+	wire B[6:0];
+	wire C[6:0];
+	wire D[6:0];
+	
+
+	
+	
+	finalOutput g1(.reset(reset),.Start_Stop(Start_Stop),.clock(clk),.A(A[6:0]),.B(B[6:0]),.C(C[6:0]),.D(D[6:0])); 
+	initial begin 
+clk=0;
+forever #5 clk=~clk;
+end
+
+	initial begin
+	
+	$monitor($time, " ns,reset=%d,Start_Stop=%d,clk=%d,A=%d,B=%d,C=%d,D=%d", reset,Start_Stop,clk,A[0],B[0],C[0],D[0]);
+	
+        
+
+#20;
+ 
+ assign Start_Stop = 1;
+	    assign reset = 0;
+
+#20;
+ assign Start_Stop = 1;
+	    assign reset = 0;
+		
+#20;
+ assign Start_Stop = 1;
+	    assign reset = 0;
+		
+#20;
+ 
+ assign Start_Stop = 1;
+	    assign reset = 0;
+
+#20;
+ assign Start_Stop = 1;
+	    assign reset = 0;
+		
+#20;
+ assign Start_Stop = 1;
+	    assign reset = 0;
+		
+end
+	
+endmodule

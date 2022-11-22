@@ -1,9 +1,10 @@
-module clk_divider(clock, rst, clk_out);
+
+module clk_divider(clock, rst, clk_in);
 input clock, rst;
-output clk_out;
+output clk_in;
  
-wire [25:0] din;
-wire [25:0] clkdiv;
+wire [18:0] din;
+wire [18:0] clkdiv;
  
 DFF0 dff_inst0(
     .data_in(din[0]),
@@ -14,7 +15,7 @@ DFF0 dff_inst0(
  
 genvar i;
 generate
-for (i = 1; i < 26; i=i+1) 
+for (i = 1; i < 19; i=i+1) 
 	begin : dff_gen_label
 		 DFF0 dff_inst (
 			  .data_in (din[i]),
@@ -27,6 +28,6 @@ endgenerate
  
 assign din = ~clkdiv;
  
-assign clk_out = clkdiv[25];
+assign clk_in = clkdiv[18];
  
 endmodule
