@@ -1,5 +1,0 @@
-Info (10281): Verilog HDL Declaration information at finalOutput.v(17): object "c1" differs only in case from object "C1" in the same scope File: D:/dldFinalQuartus/finalOutput.v Line: 17
-Info (10281): Verilog HDL Declaration information at BCDtoSevenSegment.v(3): object "A" differs only in case from object "a" in the same scope File: D:/dldFinalQuartus/BCDtoSevenSegment.v Line: 3
-Info (10281): Verilog HDL Declaration information at BCDtoSevenSegment.v(3): object "B" differs only in case from object "b" in the same scope File: D:/dldFinalQuartus/BCDtoSevenSegment.v Line: 3
-Info (10281): Verilog HDL Declaration information at BCDtoSevenSegment.v(3): object "C" differs only in case from object "c" in the same scope File: D:/dldFinalQuartus/BCDtoSevenSegment.v Line: 3
-Info (10281): Verilog HDL Declaration information at BCDtoSevenSegment.v(3): object "D" differs only in case from object "d" in the same scope File: D:/dldFinalQuartus/BCDtoSevenSegment.v Line: 3
